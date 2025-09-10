@@ -1,0 +1,79 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+  display: none;
+  min-height: 100vh;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 1s ease;
+}
+
+section.active {
+  display: flex;
+}
+
+h1, h2 {
+  color: #e60073;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 12px 24px;
+  margin: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4d88;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background: #ff1a66;
+  transform: scale(1.05);
+}
+
+video {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.shayari {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 18px;
+  color: #444;
+}
+
+#forgiveBtn {
+  position: relative;
+}
+
+#musicBtn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #333;
+  font-size: 14px;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+

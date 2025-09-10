@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry Vaishnavi ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="bgMusic" loop autoplay muted>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+  <button id="musicBtn">🔊 Unmute Music</button>
+
+  <!-- Landing Page -->
+  <section id="landing" class="active">
+    <h1>Sorry Vaishnavi ❤️</h1>
+    <p>I really want to say something...</p>
+    <button onclick="nextSection('video1')">Click to Start</button>
+  </section>
+
+  <!-- Video 1 -->
+  <section id="video1">
+    <h2>🎥 Special Apology for You ❤️</h2>
+    <video controls autoplay muted loop>
+      <source src="sorry.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>This is just the beginning… 💌</p>
+    <button onclick="nextSection('fun')">Next</button>
+  </section>
+
+  <!-- Fun Page -->
+  <section id="fun">
+    <h2>😅 Will You Forgive Me?</h2>
+    <button id="forgiveBtn">No 😜</button>
+    <p class="shayari">
+      गलती हमारी थी जो तुझसे रूठ गए,<br>
+      अब तो ये आँसू भी तेरे बिना टूट गए… 💔
+    </p>
+    <button onclick="showConfettiAndNext()" class="stable">Yes ❤️</button>
+  </section>
+
+  <!-- Video 2 -->
+  <section id="video2">
+    <h2>🎬 Made Just for You 💖</h2>
+    <video controls autoplay muted loop>
+      <source src="edit.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button onclick="nextSection('final')">Next</button>
+  </section>
+
+  <!-- Final Page -->
+  <section id="final">
+    <h1>I am Really Sorry, Vaishnavi ❤️</h1>
+    <p>Please Smile for me 🙂</p>
+    <a href="https://wa.me/918604499139forgive you!" target="_blank">
+      <button>Send me a Smile 😊</button>
+    </a>
+  </section>
+
+  <!-- Confetti JS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
